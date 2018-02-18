@@ -1,16 +1,12 @@
 $(function(){
-    $('#typo')
-        .on('mouseover', function(){
-            $('#typo').css({
-                color: '#ebc000',
-                bacgroundColor: '#ae5e9b'    
-            });
-        })
-        .on('mouseout', function(){
-            $('#typo').css({
-                color: '',
-                bacgroundColor: ''
-            });
+    $('#typo .inner')
+        .on('click', function(){
+            $('#typo .inner').animate({
+                opacity: 0,
+                fontSize: '0px'    
+            },
+            1500
+            );
         });
 });
 
