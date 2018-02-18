@@ -1,16 +1,14 @@
 $(function(){
     $('#typo .inner')
-        .css('top', '-100px')
-        .on('click', function(){
-            $('#typo .inner').animate({
-                top: '100px'
-            },
-            1500,
-            'linear',
-            function(){
-                $('#typo .inner').animate({top: '0px'}, 500);
-            }
-        );
+        .on('mouseover', function(){
+            $('#typo').animate({
+                backgroundColor: '#ae5e9b'
+            }, 500);
+    })
+    .on('mouseout', function(){
+        $('#typo').animate({
+            backgroundColor: '#3498db'
+        }, 500);
     });
 });
 
