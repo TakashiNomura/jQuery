@@ -1,8 +1,5 @@
 $(function(){
-    console.log($('#typo').css('color'));
-    $('#typo').css({
-        fontSize: '50px',
-        backgroundColor: '#ae5e9b',
-        color: '#ebc000'
-    })
+    $('#typo').on('mouseover', function(){
+        $('#typo').css('color', '#ebc000');
+    });
 });
