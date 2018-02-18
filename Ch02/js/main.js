@@ -1,8 +1,8 @@
 $(function(){
     console.log($('#typo').css('color'));
     $('#typo').css({
-        'font-size': '50px',
-        'background-color': '#ae5e9b',
-        'color': '#ebc000'
+        fontSize: '50px',
+        backgroundColor: '#ae5e9b',
+        color: '#ebc000'
     })
 });
