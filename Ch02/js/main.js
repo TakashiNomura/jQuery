@@ -1,5 +1,3 @@
 $(function(){
-    //$('#typo').css('color', '#ebc00');
-    $('#typo .inner').css('transform', 'rotate(10deg)');
-    
+    $('.page-main > div:nth-child(1) .inner').css('opacity', 0.5);
 });
