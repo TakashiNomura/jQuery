@@ -1,10 +1,12 @@
 $(function(){
     $('#typo .inner')
+        .css('top', '-100px')
         .on('click', function(){
             $('#typo .inner').animate({
-                color: '#ebc000'
+                top: '100px'
             },
-            1500
+            1500,
+            'linear'
             );
         });
 });
