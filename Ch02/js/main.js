@@ -6,8 +6,11 @@ $(function(){
                 top: '100px'
             },
             1500,
-            'linear'
-            );
-        });
+            'linear',
+            function(){
+                $('#typo .inner').animate({top: '0px'}, 500);
+            }
+        );
+    });
 });
 
