@@ -1,9 +1,6 @@
 $(function(){
-    function ChangeColor(){
-        $(this).css('color', '#ebc000');
-    }
-
-    $('#typo').on('mouseover', ChangeColor);
-    $('#header').on('mouseout', ChangeColor);
+    $('header, #typo, footer').on('mouseover', function(){
+        $(this).css('background-color', '#ae5e9b');
+    });
 });
 
